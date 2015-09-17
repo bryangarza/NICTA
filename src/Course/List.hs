@@ -134,12 +134,8 @@ map _ Nil = Nil
 -- prop> filter (const True) x == x
 --
 -- prop> filter (const False) x == Nil
-filter ::
-  (a -> Bool)
-  -> List a
-  -> List a
-filter =
-  error "todo: Course.List#filter"
+filter :: (a -> Bool) -> List a -> List a
+filter f (x:xs) = undefined
 
 -- | Append two lists to a new list.
 --
